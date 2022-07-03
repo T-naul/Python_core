@@ -5,7 +5,7 @@ test_score2=int(input("Enter the second test score: "))
 test_score3=int(input("Enter the third test score: "))
 
 average_score=(test_score1+test_score2+test_score3)/3
-print("The average of score is ",average_score)
+print("The average of score is ",round(average_score,2))
 if average_score>=95:
     print("Congratulate, your score is great!")
 
@@ -18,7 +18,7 @@ if hours_worked>40:
 else:
     gross_pay=hours_worked*pay_rate
 
-print("The gross pay is ",gross_pay)
+print("The gross pay is ",round(gross_pay,2))
 
 #3
 salary=int(input("Enter your salary: "))
@@ -41,6 +41,6 @@ while(check=='y'):
     sales=int(input("Enter the amount of sales: "))
     comm_rate=int(input("Enter the commision rate: "))
     commision=sales*comm_rate
-    print("The commision is ",commision)
+    print("The commision is ",round(commision,2))
     check=input("Press y to continue: ")
 
