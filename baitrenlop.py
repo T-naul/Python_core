@@ -83,7 +83,7 @@ min=my_list_num[0]
 for i in range(1,len(my_list_num)):
     if my_list_num[i]>max:
         max=my_list_num[i]
-    if my_list_num[i]<min:
+    elif my_list_num[i]<min:
         min=my_list_num[i]
 print("max in my_list_num: ",max)
 print("min in my_list_num: ",min)
