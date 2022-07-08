@@ -1,6 +1,7 @@
 
 
 #1: counting the number of times that the letter t|T appears
+print("#1-------------")
 str_input=input("Enter some string: ")
 count=0
 for i in str_input:
@@ -10,6 +11,7 @@ for i in str_input:
 print("Times appear of t is: ",count)
 
 #2
+print("#2---------------")
 correct_length=False
 has_uppercase=False
 has_lowercase=False
@@ -32,6 +34,7 @@ else:
 print("is_valid: ",is_valid)
 
 #3: add item to list
+print("#3---------------")
 list_input=[]
 check='y'
 while check=='y':
