@@ -90,7 +90,6 @@ print("min in my_list_num: ",min)
 
 #13: 
 print("#13---------------------------")
-
 new_list=[]
 for i in my_list_num:
     if i not in new_list:
