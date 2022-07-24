@@ -1,0 +1,8 @@
+[
+    {
+        "name": "john",
+        "email": "john@example.com",
+        "age": 10,
+        "address": "john street"
+    }
+]
