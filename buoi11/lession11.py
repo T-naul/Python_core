@@ -71,6 +71,34 @@ class Payroll:
 
 check='y'
 
+def f_employee():
+    first_name=input('Enter first name: ')
+    last_name=input('Enter last name: ')
+    salary=int(input('Enter the salary of employee: '))
+    f_employee=Full_time_Employee(first_name,last_name,salary)
+    return f_employee
+
+def p_employee():
+    first_name=input('Enter first name: ')
+    last_name=input('Enter last name: ')
+    worked_hours=int(input('Enter the worked_hours of employee: '))
+    rate=int(input('Enter the rate of employee: '))
+    p_employee=Part_time_Employee(first_name,last_name,worked_hours,rate)
+    return p_employee
+
+my_func={
+    'f':f_employee,
+    'p':p_employee
+}
+
+while check=='y':
+    payroll=Payroll()
+    type_employee=input("Enter type of employee(F/P): ")
+    employee=my_func.get(type_employee)()
+    payroll.append_employee(employee)
+
+    check=input("Do you want to continue(y/n): ").lower()
+'''
 while check=='y':
     payroll=Payroll()
     first_name=input('Enter first name: ')
@@ -88,6 +116,7 @@ while check=='y':
         payroll.append_employee(p_employee)
 
     check=input("Do you want to continue(y/n): ").lower()
+'''
 
 #print all infor of list employee:
 payroll.show_detail()
